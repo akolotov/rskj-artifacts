@@ -28,6 +28,9 @@ RUN \
 # Supervisod CONF
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
+COPY ../../rskj-ubuntu-installer/config/logback.xml /etc/rsk/logback.xml
+COPY ../../rskj-ubuntu-installer/config/testnet.conf /etc/rsk/testnet.conf
+
 EXPOSE 4444
 EXPOSE 50505
 
